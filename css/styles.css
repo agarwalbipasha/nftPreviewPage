@@ -1,0 +1,23 @@
+/* Variable Goes here */
+:root {
+  --ff-main: 'Outfit';
+  --default-l-h: 1.5; /* line-height */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --body-clr: hsl(217, 54%, 11%);
+  --clr-blue-100: hsl(215, 51%, 70%);
+  --clr-blue-200: hsl(215, 32%, 27%);
+  --clr-blue-300: hsl(217, 54%, 11%);
+}
+
+html {
+  font-size: 62.5%; /* now 1 rem = 10px by default its 16px */
+}
+
+body {
+  font-family: var(--ff-main);
+  line-height: var(--default-l-h);
+  font-size: 1.8rem;
+  background: var(--clr-blue-300);
+}
