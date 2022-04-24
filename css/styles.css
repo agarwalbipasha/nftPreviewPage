@@ -19,5 +19,26 @@ body {
   font-family: var(--ff-main);
   line-height: var(--default-l-h);
   font-size: 1.8rem;
-  background: var(--clr-blue-300);
+  background: var(--body-clr);
+}
+.container {
+  background: var(--clr-blue-200);
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 1re 1rem var(--clr-blue-300);
+}
+.container-contents {
+  margin: 0 auto;
+  padding: 5rem;
+  width: 80%;
+}
+.image {
+  width: 100%;
+  height: 80%;
+  border-radius: 10rem;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
