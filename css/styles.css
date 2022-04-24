@@ -5,10 +5,10 @@
 
   --clr-white: hsl(0, 0%, 100%);
   --clr-cyan: hsl(178, 100%, 50%);
-  --body-clr: hsl(217, 54%, 11%);
   --clr-blue-100: hsl(215, 51%, 70%);
   --clr-blue-200: hsl(215, 32%, 27%);
-  --clr-blue-300: hsl(217, 54%, 11%);
+  --clr-blue-300: hsl(216, 50%, 16%);
+  --clr-blue-400: hsl(217, 54%, 11%);
 }
 
 html {
@@ -19,26 +19,5 @@ body {
   font-family: var(--ff-main);
   line-height: var(--default-l-h);
   font-size: 1.8rem;
-  background: var(--body-clr);
-}
-.container {
-  background: var(--clr-blue-200);
-  width: 50%;
-  margin: 0 auto;
-  box-shadow: 1re 1rem var(--clr-blue-300);
-}
-.container-contents {
-  margin: 0 auto;
-  padding: 5rem;
-  width: 80%;
-}
-.image {
-  width: 100%;
-  height: 80%;
-  border-radius: 10rem;
-}
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  background: var(--clr-blue-400);
 }
