@@ -52,8 +52,7 @@ body {
 
 .card__overlay {
   position: absolute;
-  inset: 50%;
-  /* transform: translate(50%, -150%); */
+  inset: 50%;display: none;
 }
 
 .card__content {
