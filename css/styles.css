@@ -146,3 +146,68 @@ h3:hover {
     font-size: medium;
   }
 }
+
+
+/* follow this rules DRY = don't repeat yourself */
+/* ==> always make utility classes for example if you're using flex , item-center etc 
+    do this 
+    .flex {display: flex};
+    .align-center{align-items: center;}
+    .justify-between{justify-content: space-between;}
+
+    and put these classes inside html this is just an example u can make many utilty classes if u want upto if u know tailwind css u will see this everywhere
+
+    in your code you're adding repeated code */
+
+  /* ==> don't use percentages for height instead u can use vh unit or min-height  */
+  /* ==> u can also make helper classes 
+  like .heading-1 {font-family: cursive; font-weight: 400;}
+        .heading-2 {font-family: serif; font-weight: 900;} etc  */
+
+/* => u can also create for colors 
+  .red-clr {color: var(--red-clr)};
+  .green-clr {color: var(--green-clr)}; */
+
+  /* benefit for this u will make your code more clean and robust  */
+
+  /* also if same properties repeating like for example 
+    .box {
+      height: 100px;
+      height: 200px;
+      display: inline-block;
+      background: var(--red-clr);
+    }
+
+    .box-2 {
+      height: 100px;
+      height: 200px;
+      display: inline-block;
+      background: var(--green-clr);
+    }
+
+    here u see we want to create 2 box with same properties except background color in upper example we're repeating height width unneccossory
+
+    better approcah here bem convention will make your life ez 
+    eg : <div class='box box--green'> </div>
+         <div class='box box--red'> </div>
+
+         .box {
+           height: 100;
+           width: 100;
+           display: block;
+         }
+
+         .box--green {background: var(--green-clr)}
+         .box--red {background: var(--red-clr)}
+
+         /* now see our example more resusable  */
+
+         if classes different do this 
+         .box-1,
+         .box-2 {
+          height: 100;
+          width: 100;
+          display: block;
+         } */
+
+         /* i hope that make sense to u  */
